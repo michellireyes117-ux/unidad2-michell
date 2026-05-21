@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     div {
+         background-color: aquamarine;
+         margin: 10px;
+         border: 2px solid greenyellow;
+         padding: 20px;
+        }
+        /* Posicionamienton Relativo */
+        .relativo {
+         position: relative;
+         top: 20px;
+         /* Se mueve 20px desde su posicion original */
+        left: 30px;
+        /* Se mueve 30px desde la izquierda */
+        /* El espacio original que ocupaba se mantiene reservado */
+        }
+        /* Posicionamiento Absoluto */
+        .absoluto {
+        position: absolute;
+        top: 50px;
+        /* 50px desde el borde superior del contenedor posicionado mas cercano */
+        right: 20px;
+        /* 20px desde el borde derecho */
+        /* El espacio original que ocupaba se mantiene reservado */
+     }
+     /* Posicionamiento Fijo */ 
+     .fijo {
+     position: fixed;
+     bottom: 20px;
+     /* 20px desde el borde inferior de la ventana */
+     right: 20px;
+     /* 20px desde el borde derecho de la ventana */
+     /* Se mantiene en la misma posicion aunque se haga scroll */
+     }
+     /* Posicionamiento Pegajoso */
+     .pegajoso {
+        position: sticky;
+        top: 0;
+        /* Se pega al borde superior cuando el scroll lo alcanza */
+        /* Util para encabezados de tabla o menus de navegacion */
+    }
+</style>   
+<head>
+<body>
+    <div class="relativo">contenedor1</div>
+    <div class="absoluto">contenedor 2</div>
+    <div class="fijo">contenedor 3</div>
+    <div class="pegajoso">contenedor 4</div>
+</body>
+</html>

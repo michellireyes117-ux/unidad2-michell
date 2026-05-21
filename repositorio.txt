@@ -1,0 +1,7 @@
+echo "# Trabajos_Unidad2_Michell" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/michellireyes117-ux/Trabajos_Unidad2_Michell.git
+git push -u origin main
